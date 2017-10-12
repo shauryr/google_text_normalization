@@ -1,5 +1,7 @@
 '''Sequence to sequence example in Keras (character-level).
 
+This code is still under development
+
 '''
 from __future__ import print_function
 from time import time
