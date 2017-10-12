@@ -1,0 +1,23 @@
+[ 77 105 100 104 117 114 115 116   0   0] -- [58  0  0  0  0  0  0  0  0  0]
+('Total number of samples:', (9000000, 34))
+x_data sample:
+[ -1   0   0   0   0   0   0   0   0   0   0  -1  77 105 100 104 117 114
+ 115 116   0   0  -1  58   0   0   0   0   0   0   0   0   0  -1]
+y_data sample:
+0
+labels:
+Index([u'PLAIN', u'PUNCT', u'<eos>', u'DATE', u'LETTERS', u'CARDINAL',
+       u'ELECTRONIC', u'MEASURE', u'DECIMAL', u'ORDINAL', u'VERBATIM',
+       u'DIGIT', u'MONEY', u'FRACTION', u'TELEPHONE', u'TIME', u'ADDRESS'],
+      dtype='object')
+[08:00:28] Tree method is automatically selected to be 'approx' for faster speed. to use old behavior(exact greedy algorithm on single machine), set tree_method to 'exact'
+[0]	valid-merror:0.008391	train-merror:0.008146
+Multiple eval metrics have been passed: 'train-merror' will be used for early stopping.
+
+Will train until train-merror hasn't improved in 20 rounds.
+[10]	valid-merror:0.003861	train-merror:0.003619
+[20]	valid-merror:0.003126	train-merror:0.002731
+[30]	valid-merror:0.002826	train-merror:0.002279
+[40]	valid-merror:0.002578	train-merror:0.00186
+
+Process finished with exit code 0
