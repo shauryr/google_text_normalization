@@ -1,0 +1,20 @@
+/home/szr207/.local/lib/python2.7/site-packages/sklearn/cross_validation.py:41: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+Traceback (most recent call last):
+  File "xgb_classifier.py", line 21, in <module>
+    y_data = pd.factorize(df['class'])
+  File "/home/szr207/.local/lib/python2.7/site-packages/pandas/core/frame.py", line 1964, in __getitem__
+    return self._getitem_column(key)
+  File "/home/szr207/.local/lib/python2.7/site-packages/pandas/core/frame.py", line 1971, in _getitem_column
+    return self._get_item_cache(key)
+  File "/home/szr207/.local/lib/python2.7/site-packages/pandas/core/generic.py", line 1645, in _get_item_cache
+    values = self._data.get(item)
+  File "/home/szr207/.local/lib/python2.7/site-packages/pandas/core/internals.py", line 3590, in get
+    loc = self.items.get_loc(item)
+  File "/home/szr207/.local/lib/python2.7/site-packages/pandas/core/indexes/base.py", line 2444, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 132, in pandas._libs.index.IndexEngine.get_loc (pandas/_libs/index.c:5280)
+  File "pandas/_libs/index.pyx", line 154, in pandas._libs.index.IndexEngine.get_loc (pandas/_libs/index.c:5126)
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1210, in pandas._libs.hashtable.PyObjectHashTable.get_item (pandas/_libs/hashtable.c:20523)
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1218, in pandas._libs.hashtable.PyObjectHashTable.get_item (pandas/_libs/hashtable.c:20477)
+KeyError: 'class'
